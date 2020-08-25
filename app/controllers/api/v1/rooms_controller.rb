@@ -1,2 +1,2 @@
-class RoomsController < ApplicationController
+class Api::V1::RoomsController < ApplicationController
 end
