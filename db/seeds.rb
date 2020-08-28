@@ -15,5 +15,6 @@ room2 = Room.create(room_name: "Club Room")
 
 reservation1 = Reservation.create(user_id: 1, room_id: 1, hour: '12:00 pm', date: '2020-9-3', confirmID: 123456)
 reservation2 = Reservation.create(user_id: 1, room_id: 1, hour: '2:00 pm', date: '2020-9-3', confirmID: 123333)
-reservation3 = Reservation.create(user_id: 2, room_id: 2, hour: '8:00 pm', date: '2020-9-4', confirmID: 123455)
-reservation4 = Reservation.create(user_id: 2, room_id: 2, hour: '10:00 pm', date: '2020-9-7', confirmID: 122321)
+reservation3 = Reservation.create(user_id: 2, room_id: 1, hour: '2:00 pm', date: '2020-9-3', confirmID: 123333)
+reservation4 = Reservation.create(user_id: 2, room_id: 2, hour: '8:00 pm', date: '2020-9-4', confirmID: 123455)
+reservation5 = Reservation.create(user_id: 2, room_id: 2, hour: '10:00 pm', date: '2020-9-7', confirmID: 122321)
