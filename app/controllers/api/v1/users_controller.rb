@@ -24,6 +24,15 @@ class Api::V1::UsersController < ApplicationController
       params.require(:user).permit(:first_name, :last_name, :username, :email, :apartment, :password, :admin)
     end
 
+    def is_admin
+    User.all.each do |user|
+      if user.admin === "Yes"
+        return true
+      end
+    end
+    return false
+  end
+
 
 
 
