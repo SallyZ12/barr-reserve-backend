@@ -7,5 +7,12 @@ class Api::V1::RoomsController < ApplicationController
      end
 
 
+     def show
+       @room = set_room
+       render json: @room
+
+     end
+
+
 
 end
