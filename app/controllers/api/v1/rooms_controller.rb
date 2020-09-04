@@ -14,5 +14,18 @@ class Api::V1::RoomsController < ApplicationController
      end
 
 
+     private
+
+       def set_room
+         @room = User.find(params[:id])
+       end
+
+       def user_params
+         params.require(:user).permit(:room_name)
+       end
+
+
+
+
 
 end
