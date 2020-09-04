@@ -32,6 +32,19 @@ Rails.application.routes.draw do
      end
 
 
+     # namespace :api do
+     #     namespace :v1 do
+     #       resources :rooms do
+     #         resources :users do
+     #           resources:reservations
+     #         end
+     #       end
+     #     end
+     #   end ---same as just reservations
+
+
+
+
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
