@@ -10,7 +10,7 @@
 # user2 = User.create(first_name: 'Waldo', last_name: 'Where', username: 'WW', email: "ww@email.com", apartment: "5D", password_digest: "password", admin: "No")
 #
 #
-# room1 = Room.create(room_name: "Gym")
+room1 = Room.create(room_name: "Gym")
 # room2 = Room.create(room_name: "Club Room")
 #
 # reservation1 = Reservation.create(user_id: 1, room_id: 1, hour: '12:00 pm', date: '2020-9-3', confirmID: 123456)
