@@ -1,5 +1,5 @@
 class UserSerializer < ActiveModel::Serializer
-  attributes :id, :first_name, :last_name, :username, :email, :apartment, :password_digest, :admin
+  attributes :id, :first_name, :last_name, :username, :email, :apartment, :admin
 
   has_many :reservations
 
