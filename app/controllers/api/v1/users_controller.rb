@@ -18,7 +18,7 @@ class Api::V1::UsersController < ApplicationController
   def create
 
     @user = User.new(user_params)
-    # binding.pry
+
       if params[:user][:admin] === 'No' || is_admin === false
 
             if @user.save
@@ -40,7 +40,7 @@ end
 
 def update
   @user =  set_user
-
+# binding.pry
     if @user.admin === "Yes" && params[:user][:admin] === "Yes"
        @user.update(user_params)
           @user.save
@@ -56,7 +56,7 @@ def update
               @user.save
                 render json: @user
 
-       elsif @user.admin === "No" && params[:user][:admin] === "Yes" && is_admin === true
+       elsif @user.admin === "No" && params[:user][:admin] === "Yes" && is_admin === false
           @user.update(user_params)
 
          if @user.save
