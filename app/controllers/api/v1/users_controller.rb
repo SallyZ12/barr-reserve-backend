@@ -79,6 +79,7 @@ end
 
   def destroy
     @user.destroy
+    render json: @user
   end
 
 
