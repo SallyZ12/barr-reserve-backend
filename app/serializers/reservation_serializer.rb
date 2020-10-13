@@ -4,7 +4,7 @@ class ReservationSerializer < ActiveModel::Serializer
   belongs_to :user
 
   def reservation_room
-    self.object.room.room_name
+    self.object.room.room_name  
   end
 
 

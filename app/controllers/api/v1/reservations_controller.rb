@@ -28,8 +28,8 @@ class Api::V1::ReservationsController < ApplicationController
 
   def create
     if logged_in?
-        @reservation = Reservation.new(reservation_params)
-          @user = current_player
+       @reservation = Reservation.new(reservation_params)
+         @user = current_player
             if @reservation.save
               render json: @user
             else
