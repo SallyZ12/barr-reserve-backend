@@ -27,9 +27,9 @@ class Api::V1::ReservationsController < ApplicationController
   end
 
   def create
-    # if logged_in?
+    if logged_in?
        @reservation = Reservation.new(reservation_params)
-         @user = current_player
+         @user = set_user
             if @reservation.save
               render json: @user
             else
@@ -37,11 +37,11 @@ class Api::V1::ReservationsController < ApplicationController
                 error: "Your are Missing Day and/or Time"
               }
             end
-    # else
-    #   render json: {
-    #     error: "Please log in to Reserve a Room"
-    #   }
-    # end
+    else
+      render json: {
+        error: "Please log in to Reserve a Room"
+      }
+    end
   end
 
 
