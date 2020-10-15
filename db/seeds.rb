@@ -13,8 +13,8 @@ User.create(first_name: 'Randy', last_name: 'Z', username: 'RHZ', email: "r@emai
 room1 = Room.create(room_name: "Gym")
 room2 = Room.create(room_name: "Club Room")
 #
-Reservation.create(user_id: 1, room_id: 1, hour: '12:00 pm', date: '2020-9-3', confirmID: 123456)
-Reservation.create(user_id: 1, room_id: 1, hour: '2:00 pm', date: '2020-9-3', confirmID: 123333)
-Reservation.create(user_id: 2, room_id: 1, hour: '2:00 pm', date: '2020-9-3', confirmID: 123333)
-Reservation.create(user_id: 2, room_id: 2, hour: '8:00 pm', date: '2020-9-4', confirmID: 123455)
-Reservation.create(user_id: 2, room_id: 2, hour: '10:00 pm', date: '2020-9-7', confirmID: 122321)
+Reservation.create(user_id: 1, room_id: 1, hour: '12:00 pm', date: '2020-10-18', confirmID: 123456)
+Reservation.create(user_id: 1, room_id: 1, hour: '2:00 pm', date: '2020-10-19', confirmID: 123333)
+Reservation.create(user_id: 2, room_id: 1, hour: '2:00 pm', date: '2020-10-22', confirmID: 123333)
+Reservation.create(user_id: 2, room_id: 2, hour: '8:00 pm', date: '2020-10-23', confirmID: 123455)
+Reservation.create(user_id: 2, room_id: 2, hour: '10:00 pm', date: '2020-10-24', confirmID: 122321)
