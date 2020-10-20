@@ -1,5 +1,5 @@
 class ReservationSerializer < ActiveModel::Serializer
-  attributes :id, :user_id, :room_id, :hour, :date, :confirmID, :reservation_room
+  attributes :id, :user_id, :room_id, :hour, :date, :confirmID, :reservation_room, :reservation_user_apt
 
   belongs_to :user
   belongs_to :room
@@ -8,6 +8,9 @@ class ReservationSerializer < ActiveModel::Serializer
     self.object.room.room_name
   end
 
+  def reservation_user_apt
+    self.object.user.apartment
+  end
 
 
 end
