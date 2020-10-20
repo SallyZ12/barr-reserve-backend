@@ -3,7 +3,7 @@ class Api::V1::ReservationsController < ApplicationController
   def index
 
     if params[:user_id]
-      @user = current_player
+      @user = current_owner
 
       @reservations = @user.reservations
       else
@@ -27,9 +27,11 @@ class Api::V1::ReservationsController < ApplicationController
   end
 
   def create
+
     if logged_in?
+
        @reservation = Reservation.new(reservation_params)
-         @user = set_user
+         @user = current_owner
             if @reservation.save
               render json: @user
             else
