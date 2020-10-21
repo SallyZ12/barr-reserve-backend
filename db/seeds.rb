@@ -6,15 +6,15 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-User.create(first_name: 'Sally', last_name: 'Z', username: 'SAZ', email: "z@email.com", apartment: "PHB", password_digest: "password", admin: "Yes")
-User.create(first_name: 'Randy', last_name: 'Z', username: 'RHZ', email: "r@email.com", apartment: "PHB", password_digest: "password", admin: "No")
+# User.create(first_name: 'Sally', last_name: 'Z', username: 'SAZ', email: "z@email.com", apartment: "PHB", password_digest: "password", admin: "Yes")
+# User.create(first_name: 'Randy', last_name: 'Z', username: 'RHZ', email: "r@email.com", apartment: "PHB", password_digest: "password", admin: "No")
 #
 #
-room1 = Room.create(room_name: "Gym")
-room2 = Room.create(room_name: "Club Room")
+# room1 = Room.create(room_name: "Gym")
+# room2 = Room.create(room_name: "Club Room")
 #
-Reservation.create(user_id: 1, room_id: 1, hour: '12:00 pm', date: '2020-10-18', confirmID: 123456)
-Reservation.create(user_id: 1, room_id: 1, hour: '2:00 pm', date: '2020-10-19', confirmID: 123333)
-Reservation.create(user_id: 2, room_id: 1, hour: '2:00 pm', date: '2020-10-22', confirmID: 123333)
-Reservation.create(user_id: 2, room_id: 2, hour: '8:00 pm', date: '2020-10-23', confirmID: 123455)
-Reservation.create(user_id: 2, room_id: 2, hour: '10:00 pm', date: '2020-10-24', confirmID: 122321)
+# Reservation.create(user_id: 1, room_id: 1, hour: '12:00 pm', date: '2020-10-18', confirmID: 123456)
+# Reservation.create(user_id: 1, room_id: 1, hour: '2:00 pm', date: '2020-10-19', confirmID: 123333)
+# Reservation.create(user_id: 2, room_id: 1, hour: '2:00 pm', date: '2020-10-22', confirmID: 123333)
+# Reservation.create(user_id: 2, room_id: 2, hour: '8:00 pm', date: '2020-10-23', confirmID: 123455)
+# Reservation.create(user_id: 2, room_id: 2, hour: '10:00 pm', date: '2020-10-24', confirmID: 122321)
