@@ -20,7 +20,7 @@ class Api::V1::SessionsController < ApplicationController
       render json: current_player
     else
       render json: {
-        error: "Please Log In to Reserve the Room"
+        error: "Please Log In to Reserve a Time"
       }
     end
   end
