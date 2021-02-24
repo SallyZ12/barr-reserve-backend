@@ -9,4 +9,5 @@ class RoomSerializer < ActiveModel::Serializer
   end
 
 
+
 end
