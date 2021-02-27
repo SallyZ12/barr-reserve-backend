@@ -12,5 +12,8 @@ class ReservationSerializer < ActiveModel::Serializer
     self.object.user.apartment
   end
 
+  # def reserve_date
+  #   self.object.date.where('date >=?', Date.today)
+  # end
 
 end
