@@ -12,4 +12,4 @@ class User < ApplicationRecord
 
 end
 
-//test 
+//test
