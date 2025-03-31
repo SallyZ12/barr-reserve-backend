@@ -38,6 +38,8 @@ class Api::V1::UsersController < ApplicationController
     end
 end
 
+
+
 def update
   @user =  set_user
 # binding.pry
@@ -76,14 +78,19 @@ def update
 end
 
 
+      def destroy
+          @user = set_user
 
-  def destroy
-    @user.destroy
-    render json: @user
-  end
+          if @user.reservations.present?
+            render json: {
+              error: "Can not delete an Owner with Reservations"
+            }
 
-
-
+        else
+          @user.destroy
+          render json: @user
+        end
+      end
 
 
 
@@ -106,7 +113,6 @@ end
     end
     return false
   end
-
 
 
 
